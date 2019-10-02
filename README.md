@@ -1,8 +1,18 @@
 # flutter_challenge_02
 
-A Flutter project based on a Fashion Product Details UI Design by https:&#x2F;&#x2F;dribbble.com&#x2F;Pegakit
+A Flutter project based on a Fashion Product Details UI Design by [Pegakit](https://dribbble.com/Pegakit)
 
-## Getting Started
+Matthew Hansen  
+github.com/mjhansen3
+
+<img src="https://github.com/mjhansen3/flutter_challenge_01/blob/master/screenshots/home.png" width="250" height="450" alt="Main page"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://github.com/mjhansen3/flutter_challenge_01/blob/master/screenshots/cart.png" width="250" height="450" alt="Item page">
+
+## Actual Design
+
+![Design Image](https://github.com/mjhansen3/flutter_challenge_01/blob/master/screenshots/actual_image.png)
+- [Fashion Product Details UI Design](https://dribbble.com/shots/6973028-Fashion-Product-Details-UI-Design)
+
+## Getting Started With Flutter
 
 This project is a starting point for a Flutter application.
 
