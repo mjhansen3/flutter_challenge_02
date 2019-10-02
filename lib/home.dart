@@ -153,13 +153,13 @@ class Home extends StatelessWidget {
                                             height: MediaQuery.of(context).size.height / 2,
                                             child: ListView.builder(
                                                 scrollDirection: Axis.horizontal,
-                                                itemCount: 3,
+                                                itemCount: images == null ? 0 : images.length,
                                                 itemBuilder: (BuildContext context, int index) {
                                                     return Card(
                                                         elevation: 3,
                                                         color: Color(0xFFA2A2A2),
                                                         margin: EdgeInsets.only(
-                                                            right: 30,
+                                                            right: index == images.length - 1 ? 80 : 30,
                                                             bottom: 10,
                                                         ),
                                                         shape: RoundedRectangleBorder(
