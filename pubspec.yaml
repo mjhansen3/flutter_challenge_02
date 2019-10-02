@@ -47,6 +47,11 @@ flutter:
     - assets/heart_ico.png
     - assets/home_ico.png
     - assets/user_ico.png
+    - assets/images/avatar.jpg
+    - assets/images/photo_1.jpeg
+    - assets/images/photo_2.jpg
+    - assets/images/photo_3.jpg
+    - assets/images/photo_4.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
@@ -59,7 +64,13 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
+  fonts:
+    - family: PlayfairDisplay
+      fonts:
+        - asset: fonts/PlayfairDisplay-Black.ttf
+        - asset: fonts/PlayfairDisplay-Bold.ttf
+        - asset: fonts/PlayfairDisplay-Regular.ttf
+
   #   - family: Schyler
   #     fonts:
   #       - asset: fonts/Schyler-Regular.ttf
