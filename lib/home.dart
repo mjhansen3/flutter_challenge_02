@@ -140,7 +140,7 @@ class Home extends StatelessWidget {
                                         style: TextStyle(
                                             fontFamily: "PlayfairDisplay",
                                             fontWeight: FontWeight.w600,
-                                            fontSize: 35,
+                                            fontSize: 42.5
                                         ),
                                     ),
                                     Padding(
