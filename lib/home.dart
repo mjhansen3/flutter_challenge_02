@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
+import 'item.dart';
+
 class Home extends StatelessWidget {
     final List images = [
         "assets/images/photo_1.jpeg",
@@ -110,12 +112,12 @@ class Home extends StatelessWidget {
                                         ),
                                         ClipRRect(
                                             borderRadius: BorderRadius.all(Radius.circular(30)),
-                                          child: Image.asset(
-                                              "assets/images/avatar.jpg",
-                                              width: 45,
-                                              height: 45,
-                                              fit: BoxFit.cover,
-                                          ),
+                                            child: Image.asset(
+                                                "assets/images/avatar.jpg",
+                                                width: 45,
+                                                height: 45,
+                                                fit: BoxFit.cover,
+                                            ),
                                         )
                                     ],
                                 ),
@@ -155,86 +157,96 @@ class Home extends StatelessWidget {
                                                 scrollDirection: Axis.horizontal,
                                                 itemCount: images == null ? 0 : images.length,
                                                 itemBuilder: (BuildContext context, int index) {
-                                                    return Card(
-                                                        elevation: 3,
-                                                        color: Color(0xFFA2A2A2),
-                                                        margin: EdgeInsets.only(
-                                                            right: index == images.length - 1 ? 80 : 30,
-                                                            bottom: 10,
-                                                        ),
-                                                        shape: RoundedRectangleBorder(
-                                                            borderRadius: BorderRadius.circular(15),
-                                                        ),
-                                                        child: Container(
-                                                            width: 300,
-                                                            //height: MediaQuery.of(context).size.height / 3,
-                                                            child: Stack(
-                                                                children: <Widget>[
-                                                                    ClipRRect(
-                                                                        borderRadius: BorderRadius.all(Radius.circular(15)),
-                                                                        child: Image.asset(
-                                                                            images[index],
-                                                                            width: 300,
-                                                                            fit: BoxFit.fill,
+                                                    return GestureDetector(
+                                                        onTap: () {
+                                                            Navigator.push(
+                                                                context,
+                                                                MaterialPageRoute(
+                                                                    builder: (context) => Item(),
+                                                                ),
+                                                            );
+                                                        },
+                                                        child: Card(
+                                                            elevation: 3,
+                                                            color: Color(0xFFA2A2A2),
+                                                            margin: EdgeInsets.only(
+                                                                right: index == images.length - 1 ? 80 : 30,
+                                                                bottom: 10,
+                                                            ),
+                                                            shape: RoundedRectangleBorder(
+                                                                borderRadius: BorderRadius.circular(15),
+                                                            ),
+                                                            child: Container(
+                                                                width: 300,
+                                                                //height: MediaQuery.of(context).size.height / 3,
+                                                                child: Stack(
+                                                                    children: <Widget>[
+                                                                        ClipRRect(
+                                                                            borderRadius: BorderRadius.all(Radius.circular(15)),
+                                                                            child: Image.asset(
+                                                                                images[index],
+                                                                                width: 300,
+                                                                                fit: BoxFit.fill,
+                                                                            ),
                                                                         ),
-                                                                    ),
-                                                                    Positioned(
-                                                                        bottom: 20,
-                                                                        right: 20,
-                                                                        child: SizedBox(
-                                                                            width: 50,
-                                                                            height: 50,
-                                                                            child: FlatButton(
-                                                                                color: Colors.white,
-                                                                                onPressed: () {
+                                                                        Positioned(
+                                                                            bottom: 20,
+                                                                            right: 20,
+                                                                            child: SizedBox(
+                                                                                width: 50,
+                                                                                height: 50,
+                                                                                child: FlatButton(
+                                                                                    color: Colors.white,
+                                                                                    onPressed: () {
 
-                                                                                },
-                                                                                shape: RoundedRectangleBorder(
-                                                                                    borderRadius: BorderRadius.all(Radius.circular(25))
+                                                                                    },
+                                                                                    shape: RoundedRectangleBorder(
+                                                                                        borderRadius: BorderRadius.all(Radius.circular(25))
+                                                                                    ),
+                                                                                    child: Padding(
+                                                                                        padding: EdgeInsets.all(0),
+                                                                                        child: Image.asset(
+                                                                                            "assets/heart_ico.png",
+                                                                                            color: Color(0xFF8A8A8F),
+                                                                                            width: 15,
+                                                                                            height: 15,
+                                                                                        ),
+                                                                                    ),
                                                                                 ),
-                                                                                child: Padding(
-                                                                                    padding: EdgeInsets.all(0),
-                                                                                    child: Image.asset(
-                                                                                        "assets/heart_ico.png",
-                                                                                        color: Color(0xFF8A8A8F),
-                                                                                        width: 15,
-                                                                                        height: 15,
+                                                                            )
+                                                                        ),
+                                                                        Positioned(
+                                                                            bottom: 50,
+                                                                            left: 20,
+                                                                            child: SizedBox(
+                                                                                width: 150,
+                                                                                height: 50,
+                                                                                child: Text(
+                                                                                    "Beautiful \nWomen Dress",
+                                                                                    style: TextStyle(
+                                                                                        fontFamily: "Montserrat",
+                                                                                        fontWeight: FontWeight.w400,
+                                                                                        color: Colors.white,
+                                                                                        fontSize: 20,
                                                                                     ),
                                                                                 ),
                                                                             ),
-                                                                        )
-                                                                    ),
-                                                                    Positioned(
-                                                                        bottom: 50,
-                                                                        left: 20,
-                                                                        child: SizedBox(
-                                                                            width: 150,
-                                                                            height: 50,
+                                                                        ),
+                                                                        Positioned(
+                                                                            bottom: 20,
+                                                                            left: 20,
                                                                             child: Text(
-                                                                                "Beautiful \nWomen Dress",
+                                                                                "\$159.99",
                                                                                 style: TextStyle(
                                                                                     fontFamily: "Montserrat",
-                                                                                    fontWeight: FontWeight.w400,
+                                                                                    fontWeight: FontWeight.w500,
                                                                                     color: Colors.white,
                                                                                     fontSize: 20,
                                                                                 ),
                                                                             ),
                                                                         ),
-                                                                    ),
-                                                                    Positioned(
-                                                                        bottom: 20,
-                                                                        left: 20,
-                                                                        child: Text(
-                                                                            "\$159.99",
-                                                                            style: TextStyle(
-                                                                                fontFamily: "Montserrat",
-                                                                                fontWeight: FontWeight.w500,
-                                                                                color: Colors.white,
-                                                                                fontSize: 20,
-                                                                            ),
-                                                                        ),
-                                                                    ),
-                                                                ],
+                                                                    ],
+                                                                ),
                                                             ),
                                                         ),
                                                     );

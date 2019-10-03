@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'home.dart';
+import 'item.dart';
 
 void main() => runApp(MyApp());
 
@@ -14,6 +15,10 @@ class MyApp extends StatelessWidget {
                 primarySwatch: Colors.blue,
             ),
             home: Home(),
+            routes: <String, WidgetBuilder>{
+                '/home': (BuildContext context) => Home(),
+                '/item': (BuildContext context) => Item(),
+            },
         );
     }
 }
