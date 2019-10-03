@@ -5,7 +5,7 @@ A Flutter project based on a Fashion Product Details UI Design by [Pegakit](http
 Matthew Hansen  
 github.com/mjhansen3
 
-<img src="https://github.com/mjhansen3/flutter_challenge_02/blob/master/screenshots/home.png" width="250" height="450" alt="Main page"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://github.com/mjhansen3/flutter_challenge_02/blob/master/screenshots/cart.png" width="250" height="450" alt="Item page">
+<img src="https://github.com/mjhansen3/flutter_challenge_02/blob/master/screenshots/home.png" width="250" height="450" alt="Main page"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://github.com/mjhansen3/flutter_challenge_02/blob/master/screenshots/item.png" width="250" height="450" alt="Item page">
 
 ## Actual Design
 

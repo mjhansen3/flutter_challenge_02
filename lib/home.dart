@@ -6,6 +6,7 @@ import 'item.dart';
 class Home extends StatelessWidget {
     final List images = [
         "assets/images/photo_1.jpeg",
+        "assets/images/photo_2.jpeg",
         "assets/images/photo_3.jpg",
         "assets/images/photo_4.jpg",
     ];
@@ -97,7 +98,7 @@ class Home extends StatelessWidget {
                         child: Padding(
                             padding: EdgeInsets.only(
                                 left: 30,
-                                right: 30
+                                right: 30,
                             ),
                             child: Container(
                                 width: MediaQuery.of(context).size.width,
@@ -162,7 +163,9 @@ class Home extends StatelessWidget {
                                                             Navigator.push(
                                                                 context,
                                                                 MaterialPageRoute(
-                                                                    builder: (context) => Item(),
+                                                                    builder: (context) => Item(
+                                                                        itemImage: images[index],
+                                                                    ),
                                                                 ),
                                                             );
                                                         },
@@ -186,6 +189,7 @@ class Home extends StatelessWidget {
                                                                             child: Image.asset(
                                                                                 images[index],
                                                                                 width: 300,
+                                                                                height: 500,
                                                                                 fit: BoxFit.fill,
                                                                             ),
                                                                         ),
