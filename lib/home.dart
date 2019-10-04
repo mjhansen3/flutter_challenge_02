@@ -153,7 +153,7 @@ class Home extends StatelessWidget {
                                         ),
                                         child: Container(
                                             width: MediaQuery.of(context).size.width,
-                                            height: MediaQuery.of(context).size.height / 2,
+                                            height: MediaQuery.of(context).size.height / 1.85,
                                             child: ListView.builder(
                                                 scrollDirection: Axis.horizontal,
                                                 itemCount: images == null ? 0 : images.length,
@@ -173,14 +173,14 @@ class Home extends StatelessWidget {
                                                             elevation: 3,
                                                             color: Color(0xFFA2A2A2),
                                                             margin: EdgeInsets.only(
-                                                                right: index == images.length - 1 ? 80 : 30,
+                                                                right: index == images.length - 1 ? 75 : 30,
                                                                 bottom: 10,
                                                             ),
                                                             shape: RoundedRectangleBorder(
                                                                 borderRadius: BorderRadius.circular(15),
                                                             ),
                                                             child: Container(
-                                                                width: 300,
+                                                                width: MediaQuery.of(context).size.width - MediaQuery.of(context).size.width/3.5,
                                                                 //height: MediaQuery.of(context).size.height / 3,
                                                                 child: Stack(
                                                                     children: <Widget>[

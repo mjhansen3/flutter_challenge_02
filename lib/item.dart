@@ -88,7 +88,7 @@ class _ItemState extends State<Item> {
                                                         ),
                                                     ),
                                                     Positioned(
-                                                        top: 100,
+                                                        top: 90,
                                                         child: Container(
                                                             width: MediaQuery.of(context).size.width - 60,
                                                             height: 50,
@@ -117,10 +117,10 @@ class _ItemState extends State<Item> {
                                                         ),
                                                     ),
                                                     Positioned(
-                                                        top: 165,
+                                                        top: 150,
                                                         child: Container(
                                                             width: MediaQuery.of(context).size.width - 60,
-                                                            height: 85,
+                                                            height: 60,
                                                             child: Row(
                                                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                 children: <Widget>[
@@ -134,8 +134,8 @@ class _ItemState extends State<Item> {
                                                                         ),
                                                                     ),
                                                                     SizedBox(
-                                                                        width: 65,
-                                                                        height: 65,
+                                                                        width: 60,
+                                                                        height: 60,
                                                                         child: RaisedButton(
                                                                             elevation: btnSizeXS ? 18 : 0,
                                                                             color: Color(0xFFFFFFFF),
@@ -149,7 +149,7 @@ class _ItemState extends State<Item> {
                                                                                 });
                                                                             },
                                                                             shape: RoundedRectangleBorder(
-                                                                                borderRadius: BorderRadius.all(Radius.circular(32.5)),
+                                                                                borderRadius: BorderRadius.all(Radius.circular(30)),
                                                                                 side: BorderSide(
                                                                                     color: btnSizeXS ? Colors.transparent : Color(0xFFA5A09F),
                                                                                     width: 1.8,
@@ -167,8 +167,8 @@ class _ItemState extends State<Item> {
                                                                         ),
                                                                     ),
                                                                     SizedBox(
-                                                                        width: 65,
-                                                                        height: 65,
+                                                                        width: 60,
+                                                                        height: 60,
                                                                         child: RaisedButton(
                                                                             elevation: btnSizeS ? 18 : 0,
                                                                             color: Color(0xFFFFFFFF),
@@ -182,7 +182,7 @@ class _ItemState extends State<Item> {
                                                                                 });
                                                                             },
                                                                             shape: RoundedRectangleBorder(
-                                                                                borderRadius: BorderRadius.all(Radius.circular(32.5)),
+                                                                                borderRadius: BorderRadius.all(Radius.circular(30)),
                                                                                 side: BorderSide(
                                                                                     color: btnSizeS ? Colors.transparent : Color(0xFFA5A09F),
                                                                                     width: 1.8,
@@ -200,8 +200,8 @@ class _ItemState extends State<Item> {
                                                                         ),
                                                                     ),
                                                                     SizedBox(
-                                                                        width: 65,
-                                                                        height: 65,
+                                                                        width: 60,
+                                                                        height: 60,
                                                                         child: RaisedButton(
                                                                             elevation: btnSizeM ? 18 : 0,
                                                                             color: Color(0xFFFFFFFF),
@@ -215,7 +215,7 @@ class _ItemState extends State<Item> {
                                                                                 });
                                                                             },
                                                                             shape: RoundedRectangleBorder(
-                                                                                borderRadius: BorderRadius.all(Radius.circular(32.5)),
+                                                                                borderRadius: BorderRadius.all(Radius.circular(30)),
                                                                                 side: BorderSide(
                                                                                     color: btnSizeM ? Colors.transparent : Color(0xFFA5A09F),
                                                                                     width: 1.8,
@@ -233,8 +233,8 @@ class _ItemState extends State<Item> {
                                                                         ),
                                                                     ),
                                                                     SizedBox(
-                                                                        width: 65,
-                                                                        height: 65,
+                                                                        width: 60,
+                                                                        height: 60,
                                                                         child: RaisedButton(
                                                                             elevation: btnSizeL ? 18 : 0,
                                                                             color: Color(0xFFFFFFFF),
@@ -248,7 +248,7 @@ class _ItemState extends State<Item> {
                                                                                 });
                                                                             },
                                                                             shape: RoundedRectangleBorder(
-                                                                                borderRadius: BorderRadius.all(Radius.circular(32.5)),
+                                                                                borderRadius: BorderRadius.all(Radius.circular(30)),
                                                                                 side: BorderSide(
                                                                                     color: btnSizeL ? Colors.transparent : Color(0xFFA5A09F),
                                                                                     width: 1.8,
@@ -270,7 +270,7 @@ class _ItemState extends State<Item> {
                                                         ),
                                                     ),
                                                     Positioned(
-                                                        bottom: 10,
+                                                        bottom: 0,
                                                         left: 0,
                                                         right: 0,
                                                         child: RaisedButton(
