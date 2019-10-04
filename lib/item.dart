@@ -298,12 +298,12 @@ class _ItemState extends State<Item> {
                                                                 ),
                                                             ),
                                                         ),
-                                                    )
+                                                    ),
                                                 ],
                                             ),
                                         ),
                                     ),
-                                )
+                                ),
                             ],
                         ),
                     ),
@@ -375,7 +375,7 @@ class _ItemState extends State<Item> {
                                                     ),
                                                 ],
                                             ),
-                                        )
+                                        ),
                                     ],
                                 ),
                             ),
